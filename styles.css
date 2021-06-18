@@ -1,0 +1,188 @@
+/* Polices Font Squirrel*/
+@font-face {
+  font-family: "ballparkweiner";
+  src: url("ballpark-webfont.woff2") format("woff2"),
+    url("ballpark-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "day_romanregular";
+  src: url("dayrom-webfont.woff2") format("woff2"),
+    url("dayrom-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Style du site */
+body {
+  background: url("images/fond_jaune.png");
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: black;
+}
+#wrapper {
+  width: 900px;
+  margin: auto;
+}
+h1,
+h2,
+h3,
+nav a {
+  text-transform: uppercase;
+  font-family: "day_romanregular", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+}
+p,
+h4 {
+  font-family: "day_romanregular", sans-serif;
+}
+
+/* header */
+header h1 {
+  font-family: "ballparkweiner", sans-serif;
+  font-weight: bold;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#titre {
+  display: flex;
+  flex-direction: column;
+}
+#logo {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+nav a {
+  padding: 0 0 0 10px;
+  font-size: 1.2em;
+  color: black;
+}
+nav a:hover {
+  color: chocolate;
+}
+
+/* Bannière */
+#frisco {
+  border-radius: 5px;
+  height: auto;
+}
+#hero h4 {
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+#button {
+  border-radius: 5px;
+  background-color: darkred;
+  color: beige;
+  text-transform: uppercase;
+  width: 200px;
+  height: 25px;
+  display: block;
+  margin: auto;
+  padding-top: 2px;
+  margin-bottom: 10px;
+}
+/* Bloc principal */
+section {
+  display: flex;
+  justify-content: space-between;
+  background: url(images/separateur.png) repeat-x top,
+    url(images/ombre.png) repeat-x top;
+}
+#epingle {
+  margin-top: 20px;
+}
+article {
+  margin-right: 10px;
+  text-align: justify;
+  flex: 3;
+}
+article h2 {
+  text-align: left;
+}
+aside {
+  margin-left: 10px;
+  background-color: #706b64;
+  border: 3px goldenrod solid;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#bulle {
+  margin-left: -320px;
+}
+#moi {
+  display: block;
+  margin: auto;
+  border: 3px solid red;
+}
+
+/* Footer */
+.underline {
+  text-align: center;
+  background: url(images/separateur.png) repeat-x top,
+    url(images/ombre.png) repeat-x top;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+#tweet {
+  width: 30%;
+  text-align: center;
+}
+#photos {
+  width: 35%;
+}
+#amis {
+  width: 35%;
+}
+#liste_amis {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+/* Media queries */
+@media screen and (max-width: 1024px) {
+  #wrapper {
+    width: auto;
+  }
+  nav ul {
+    flex-direction: column;
+    font-size: 0.8em;
+  }
+  #hero {
+    display: none;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  #bulle {
+    display: none;
+  }
+  #moi {
+    float: right;
+  }
+  aside p:last-child {
+    text-align: center;
+  }
+}
